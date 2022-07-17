@@ -1,0 +1,21 @@
+#login.base{width: 100%;height: 100vh;display: flex;justify-content: center;align-items: center;background-image: url("bg.jpg"), linear-gradient(-90deg, #070a1b 50%, rgba(7, 10, 27, .9));background-repeat: no-repeat;background-size: cover;background-blend-mode: multiply; position: relative;}
+#login form{width: 350px;background-color: #FFFFFF;border-radius: 5px;padding: 26px;position: relative;z-index: 2;}
+#login form::before{content: "";width: 100%;height: 100%;border: 1px solid #FFFFFF;border-radius: 5px;position: absolute;top: 16px;left: 16px;opacity: .5;z-index: -1;}
+#login form::after{content: "";width: 60px;height: 60px;border: 1px solid #FFFFFF;border-radius: 5px;position: absolute;top: -26px;left: calc(100% + 32px);opacity: .5;z-index: -1;}
+#login form .logo{width: 100%;padding: 50px 0;background-color: #070a1b;border-radius: 5px;margin-bottom: 26px;}
+#login form .logo img{width: 250px;margin: 0 auto;display: block;}
+#login form label{display: block;font-size: 12px;font-weight: bold;text-transform: uppercase;letter-spacing: 1px;margin-bottom: 6px;}
+#login form input{width: 100%;height: 50px;padding: 0 16px;border: 1px solid #C4C4C4;border-radius: 5px;margin-bottom: 16px;}
+#login form input:focus{border-color: #1350bb;outline: none;}
+#login form button{width: 100%;height: 50px;line-height: 50px;display: block;text-align: center;font-size: 12px;font-weight: bold;text-transform: uppercase;letter-spacing: 1px;border: 1px solid #1350bb;border-radius: 5px;background-color: transparent;position: relative;margin-top: 0;}
+#login form button::before{content: "";width: 0;height: 100%;background-color: #1350bb;position: absolute;top: 0;left: 0;transition-duration: .2s;z-index: 1;}
+#login form button:hover::before{width: 100%;}
+#login form button span{color: #1350bb;position: relative;z-index: 1;}
+#login form button:hover span{color: #FFFFFF;}
+
+@media only screen and (max-width: 600px){
+    #login form{width: calc(100% - 32px);padding: 6px;}
+    #login form::before,
+    #login form::after{display: none;}
+    #login form .logo{padding: 26px 0;margin-bottom: 10px;}
+}

@@ -1,0 +1,50 @@
+#carros{display: flex;justify-content: space-between;}
+#carros main{flex: 1;padding: 26px;}
+#carros main h1{display: flex;justify-content: space-between;align-items: center;}
+#carros main h1 button{height: 50px;line-height: 50px;display: block;text-align: center;font-size: 12px;font-weight: bold;text-transform: uppercase;letter-spacing: 1px;border: 1px solid #1350bb;border-radius: 5px;background-color: transparent;position: relative;margin-top: 0;padding: 0 26px;}
+#carros main h1 button::before{content: "";width: 0;height: 100%;background-color: #1350bb;position: absolute;top: 0;left: 0;transition-duration: .2s;z-index: 1;}
+#carros main h1 button:hover::before{width: 100%;}
+#carros main h1 button span{color: #1350bb;position: relative;z-index: 1;}
+#carros main h1 button:hover span{color: #FFFFFF;}
+#carros main .acao{width: 40px;height: 40px;text-align: center;line-height: 40px;border-radius: 5px;}
+#carros main .acao:hover{background-color: #1350bb;color: #FFFFFF;}
+#carros main .pesquisa{width: 100%;}
+#carros main .pesquisa label{display: block;margin-bottom: 6px;font-size: 14px;}
+#carros main .pesquisa input{width: 100%;height: 40px;border-radius: 5px;border: 1px solid #999999;margin-bottom: 16px;padding: 0 16px;}
+#carros main .pesquisa input:focus{outline: none;border-color: #1350bb;}
+
+#carros main #lateral{width: 100%;height: 100%;background-color: rgba(0, 0, 0, .7);position: fixed;top: 0;left: 0;z-index: 5;opacity: 0;visibility: hidden;}
+#carros main #lateral.active{opacity: 1;visibility: visible;}
+#carros main #lateral form{min-width: 400px;background-color: #FFFFFF;height: 100%;position: absolute;top: 0;right: 0;padding: 16px;opacity: 0;visibility: hidden;transition-delay: .3s;}
+#carros main #lateral.active form.active{opacity: 1;visibility: visible;}
+#carros main #lateral form h3{display: flex;justify-content: space-between;align-items: center;margin-bottom: 16px;}
+#carros main #lateral form h3 i{width: 40px;height: 40px;line-height: 40px;background-color: rgb(19, 80, 187, .5);color: #FFFFFF;border-radius: 5px;font-size: 16px;text-align: center;}
+#carros main #lateral form h3 i:hover{background-color: #1350bb;}
+#carros main #lateral form label{display: block;margin-bottom: 6px;font-size: 14px;}
+#carros main #lateral form input{width: 100%;height: 40px;border-radius: 5px;border: 1px solid #999999;margin-bottom: 16px;padding: 0 16px;}
+#carros main #lateral form input:focus{outline: none;border-color: #1350bb;}
+#carros main #lateral form button{width: 100%;height: 40px;line-height: 40px;display: block;text-align: center;font-size: 12px;font-weight: bold;text-transform: uppercase;letter-spacing: 1px;border: 1px solid #1350bb;border-radius: 5px;background-color: transparent;position: relative;margin-top: 0;padding: 0 26px;}
+#carros main #lateral form button::before{content: "";width: 0;height: 100%;background-color: #1350bb;position: absolute;top: 0;left: 0;transition-duration: .2s;z-index: 1;}
+#carros main #lateral form button:hover::before{width: 100%;}
+#carros main #lateral form button span{color: #1350bb;position: relative;z-index: 1;}
+#carros main #lateral form button:hover span{color: #FFFFFF;}
+
+#carros main #confirmar{position: fixed;bottom: 26px;right: -50px;padding: 16px;box-shadow: 0 5px 10px rgba(0, 0, 0, .4);border-radius: 5px;opacity: 0;visibility: hidden;}
+#carros main #confirmar.active{opacity: 1;visibility: visible;right: 26px;}
+#carros main #confirmar .opcoes{display: flex;margin-top: 16px;}
+#carros main #confirmar .opcoes div{line-height: 40px;padding: 0 16px;border: 1px solid #999999;border-radius: 5px;}
+#carros main #confirmar .opcoes div:first-child{margin-right: 10px;}
+#carros main #confirmar .opcoes div:hover{background-color: #999999;color: #FFFFFF;}
+
+@media only screen and ( max-width: 600px){
+    #carros main{padding: 6px;flex: initial;width: 100%;}
+    #carros main h1{font-size: 26px;margin-top: 16px;flex-direction: column;margin-bottom: 16px;justify-content: flex-start;align-items: flex-start;}
+    #carros main h1 button{margin-top: 10px;width: 100%;}
+    #carros main #tabela{width: 100%;}
+
+    #carros main #lateral form{min-width: initial;width: 100%;}
+
+    #carros main #confirmar{width: 100%;bottom: 0;}
+    #carros main #confirmar.active{right: 0;}
+}
+
