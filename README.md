@@ -5,7 +5,7 @@ Link para visualização do projeto: https://me2-front.nillink.com.br/
 
 ## Descrição
 
-Este projeto visa avaliar as habilidades e conhecimento em React.
+Este projeto visa avaliar habilidades e conhecimento em React.
 
 ## O desafio
 
