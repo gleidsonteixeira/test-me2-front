@@ -4,11 +4,12 @@
 Link para visualização do projeto: https://me2-front.nillink.com.br/
 
 ## Descrição
-
 Este projeto visa avaliar habilidades e conhecimento em React.
 
-## O desafio
+## Trabalho realizado
+Neste projeto foi criado o frontEnd do desafio, tela de login, tela de motoristas, tela de carros, tela 404
 
+## O desafio
 Você irá construir um sistema de cadastro de motoristas.
 Nossa ideia é que o sistema possa cadastrar um motorista e um veículo do motorista, a tela
 deve conter:
